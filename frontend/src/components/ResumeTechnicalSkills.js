@@ -12,7 +12,7 @@ const ResumeTechnicalSkills = () => {
                             {skill.items.map((item, index) => {
                                 const len = skill.items.length;
                                 if (index !== len - 1) {
-                                    return `${item} , `;
+                                    return `${item}, `;
                                 } else {
                                     return `${item}`;
                                 }

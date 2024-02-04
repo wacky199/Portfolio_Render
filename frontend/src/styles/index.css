@@ -20,14 +20,18 @@ code {
         monospace;
 }
 
-p {
-    color: rgb(39, 39, 39);
-}
+/* p {
+    color: #353535;
+} */
 
 .swal-text {
     text-align: center;
 }
 
+.subheading {
+    color: #353535;
+    font-size: 2rem;
+}
 /* .swal-modal {
     width:500px;
     height: 205px;

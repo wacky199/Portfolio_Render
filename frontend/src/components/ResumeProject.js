@@ -20,7 +20,7 @@ const ResumeProject = () => {
                         </p>
                         <p>
                             {project.description.map((line) => {
-                                return <p className="remark">{line}</p>;
+                                return <p className="remark">* {line}</p>;
                             })}
                         </p>
                     </div>

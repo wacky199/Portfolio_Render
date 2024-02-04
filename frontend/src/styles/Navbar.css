@@ -7,14 +7,14 @@ body {
     background-color: #000000;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: justify;
 
     /* width:100%;
     display:block;
     position:sticky; */
 }
 .menuBars {
-    margin-left: 8%;
+    margin-left: 15vh;
     font-size: 2rem;
     background: none;
     padding: 5px;

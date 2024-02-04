@@ -33,7 +33,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 1.1em;
+    gap: 0.8rem;
 }
 .container h2 {
     font-size: 1.7rem;
@@ -48,18 +48,19 @@
 }
 .passingYear, .duration {
     font-size: 0.75em;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.2rem;
 }
 .companyLink{
-     padding-bottom: 0em;
+     padding-bottom: 0.2rem;
 }
 .projectLink {
-    padding-bottom: 0.6em;
+    padding-bottom: 0.5rem;
 }
 
 .projectLink a,.companyLink a {
     text-decoration: none;
     color: #9c9c9c;
+    /* margin: 1rem 0; */
 }
 .projectLink a:hover,.companyLink a:hover {
     background: -webkit-linear-gradient(
@@ -72,10 +73,14 @@
     -webkit-text-fill-color: transparent;
 }
 .remark {
-    font-size: 0.9em;
+    font-size: 0.85em;
+    text-align: justify;
+    padding: 0.2rem;
+    color: #353535;
 }
 .educationRemark{
     font-size: 0.85em;
+    text-align: left;
 }
 .education:hover h2,
 .projects:hover h2,
@@ -92,7 +97,8 @@
 }
 
 .skills {
-    font-size: 0.9em;
+    font-size: 0.85em;
+    color: #353535;
 }
 
 @media screen and (max-width: 1200px) {

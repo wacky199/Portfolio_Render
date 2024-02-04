@@ -5,7 +5,7 @@ import ContactSocialMediaHandles from '../components/ContactSocialMediaHandles';
 const Contact = () => {
     return (
         <div className="page mainContactPage">
-            <h1>Contact</h1>
+            <h1>Get in Touch</h1>
             <div className="contactPage">
                 <div className="contact">
                     <GetInTouch />

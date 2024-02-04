@@ -30,8 +30,8 @@ const ContactForm = () => {
             console.error();
             swal({
                 title: 'Error',
-                text: 'There is some error in sending this message. Please try some other listed method to connect.',
-                icon: 'error',
+                text: 'Looks like this message got lost in cyberspace. Try a different way to connect. Let\'s see if we can outsmart the tech!',
+                icon: 'warning',
                 dangerMode: false,
             });
         }
@@ -56,14 +56,14 @@ const ContactForm = () => {
             console.log(`Message details: ${JSON.stringify(data)}`);
             swal({
                 title: 'Confirmation',
-                text: 'Please click OK if you want to send this message.',
+                text: 'Ready to send this message? Hit OK and let\'s unleash it into the digital wild! ',
                 icon: 'info',
                 dangerMode: false,
             }).then((willSend) => {
                 if (willSend) {
                     swal(
-                        'Thankyou!',
-                        'Your message has been sent successfully!'
+                      "Thankyou!",
+                      "Sent! May take time. DM for speedy reply!"
                     );
                     onSubmitPostData();
                 }
@@ -72,20 +72,20 @@ const ContactForm = () => {
             if (emptyMessage || emptyName) {
                 swal({
                     title: 'Error!',
-                    text: 'Please fill all the fields of the form.',
+                    text: 'Empty fields? Let\'s fill \'em!',
                     dangerMode: false,
                     icon: 'warning',
                 });
             } else if (!validEmail) {
                 swal({
-                    title: 'Invalid Email!',
-                    text: 'Please enter a valid email address.',
-                    dangerMode: false,
+                  title: "Invalid Email!",
+                  text: "Email ID fail! Let\'s retry with real one.",
+                  dangerMode: false,
                 });
             } else {
                 swal({
                     title: 'Error!',
-                    text: 'Please fill all the fields of form.',
+                    text: 'Empty fields? Let\'s fill \'em!',
                     dangerMode: false,
                 });
             }
@@ -124,37 +124,37 @@ const ContactForm = () => {
     /////////////////////////////////////////////////////////////////////////
 
     return (
-        <div className="getInTouchContactForm">
-            <h2>Contact form</h2>
-            <form onSubmit={(e) => submit(e)}>
-                <input
-                    onChange={(e) => handle(e)}
-                    type="text"
-                    defaultValue={data.name}
-                    id="name"
-                    placeholder="Full Name"
-                />
-                <br />
-                <input
-                    onChange={(e) => handle(e)}
-                    type="email"
-                    id="email"
-                    defaultValue={data.email}
-                    placeholder="Email Address"
-                />
-                <br />
-                <textarea
-                    onChange={(e) => handle(e)}
-                    id="message"
-                    defaultValue={data.message}
-                    rows="5"
-                    cols="auto"
-                    placeholder="Message"
-                />
-                <br />
-                <input type="submit" className="btn" value="Send Message" />
-            </form>
-        </div>
+      <div className="getInTouchContactForm">
+        <h2>Contact form</h2>
+        <form onSubmit={(e) => submit(e)}>
+          <input
+            onChange={(e) => handle(e)}
+            type="text"
+            defaultValue={data.name}
+            id="name"
+            placeholder="Full Name"
+          />
+          <br />
+          <input
+            onChange={(e) => handle(e)}
+            type="email"
+            id="email"
+            defaultValue={data.email}
+            placeholder="Email ID"
+          />
+          <br />
+          <textarea
+            onChange={(e) => handle(e)}
+            id="message"
+            defaultValue={data.message}
+            rows="5"
+            cols="auto"
+            placeholder="Your Note"
+          />
+          <br />
+          <input type="submit" className="btn" value="Shoot a Message" />
+        </form>
+      </div>
     );
 };
 
